@@ -3,7 +3,7 @@ using namespace std;
 
 
 struct str{ 
-    int num;
+    int num=10;
     char ch;
     int arr[10];
     char brr[10];
@@ -23,7 +23,6 @@ int main(){
 
     printf("%d\n",str1.num);
     printf("%c\n",str1.ch);
-
     for(int i=0;i<3;i++)
     {
         printf("%d ",str1.arr[i]);
@@ -31,11 +30,15 @@ int main(){
     printf("\nMy string: %s", str1.brr);
 
 
-
+    // Assigning values to attribute in one line
     struct str str2={2,'a'};
-
     printf("'\n%d\n",str2.num);
     printf("%c\n",str2.ch);
+
+
+    // Attribute with value
+    struct str str3;
+    printf("'\n%d\n",str3.num);
 
 
     return 0;
